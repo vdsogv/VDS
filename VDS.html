@@ -1,39 +1,14 @@
 <!DOCTYPE html>  
 <html>  
 <head>  
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet>  
-  <style>  
-    body {  
-      background: #000;  
-      overflow: hidden;  
-    }  
-    .vds {  
-      font-family: 'Press Start 2P', cursive;  
-      font-size: 120px;  
-      background: linear-gradient(45deg, #ff00ff, #00ffff);  
-      -webkit-background-clip: text;  
-      -webkit-text-fill-color: transparent;  
-      animation: glitch 0.5s infinite, float 3s ease-in-out infinite;  
-      position: absolute;  
-      top: 50%;  
-      left: 50%;  
-      transform: translate(-50%, -50%);  
-    }  
-    @keyframes glitch {  
-      0% { text-shadow: 5px 0 cyan, -5px 0 magenta; }  
-      50% { text-shadow: -5px 0 cyan, 5px 0 magenta; }  
-      100% { text-shadow: 5px 0 cyan, -5px 0 magenta; }  
-    }  
-    @keyframes float {  
-      0%, 100% { transform: translate(-50%, -60%); }  
-      50% { transform: translate(-50%, -40%); }  
-    }  
-  </style>  
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="styles.css">  
 </head>  
 <body>  
-  <div class="vds">VDS</div>  
-  <audio autoplay loop>  
-    <source src="https://actions.google.com/sounds/v1/science_fiction/computer_console_beep.ogg" type="audio/ogg">  
-  </audio>  
+  <div class="vds-container">  
+    <span class="vds-letter">V</span>  
+    <span class="vds-letter">D</span>  
+    <span class="vds-letter">S</span>  
+  </div>  
 </body>  
 </html>
